@@ -1,6 +1,5 @@
-import { RMap, Stream, HashMap } from "@rimbu/core";
+import { RMap, Stream, HashMap, ProximityMap } from "@rimbu/core";
 import { LocaleLike, ensureLanguageTag, getLocaleDistance } from "./LocaleLike";
-import { ProximityMap } from "./proximity";
 
 export type Phrase = string;
 
