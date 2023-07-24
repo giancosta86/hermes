@@ -1,6 +1,6 @@
 {
   "name": "@giancosta86/hermes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimalist i18n in TypeScript",
   "keywords": [
     "internationalization",
@@ -38,10 +38,10 @@
   },
   "dependencies": {
     "@giancosta86/time-utils": "^2.0.0",
-    "@rimbu/collection-types": "^0.10.6",
-    "@rimbu/hashed": "^0.9.7",
-    "@rimbu/proximity": "^0.1.2",
-    "@rimbu/stream": "^0.13.6"
+    "@rimbu/collection-types": "^1.0.0",
+    "@rimbu/hashed": "^1.0.0",
+    "@rimbu/proximity": "^1.0.0",
+    "@rimbu/stream": "^1.0.0"
   },
   "devDependencies": {
     "@swc/core": "^1.3.58",
