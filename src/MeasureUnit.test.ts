@@ -1,5 +1,5 @@
-import { MeasureUnit } from "./MeasureUnit";
-import { Noun } from "./Noun";
+import { MeasureUnit } from "./MeasureUnit.js";
+import { Noun } from "./Noun.js";
 
 const testUnitNoun: Noun = {
   singular: "kilogram",

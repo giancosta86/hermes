@@ -1,4 +1,4 @@
-import { Noun } from "./Noun";
+import { Noun } from "./Noun.js";
 
 export class MeasureUnit {
   constructor(private readonly noun: Noun) {}

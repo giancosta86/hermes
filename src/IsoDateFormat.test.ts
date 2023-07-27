@@ -1,5 +1,5 @@
 import { IsoDate } from "@giancosta86/time-utils";
-import { IsoDateFormat } from "./IsoDateFormat";
+import { IsoDateFormat } from "./IsoDateFormat.js";
 
 describe("Formatting ISO date", () => {
   const isoDateString = "2020-07-09";

@@ -2,7 +2,11 @@ import { HashMap } from "@rimbu/hashed";
 import { ProximityMap } from "@rimbu/proximity";
 import { Stream } from "@rimbu/stream";
 import { RMap } from "@rimbu/collection-types";
-import { LocaleLike, ensureLanguageTag, getLocaleDistance } from "./LocaleLike";
+import {
+  LocaleLike,
+  ensureLanguageTag,
+  getLocaleDistance
+} from "./LocaleLike.js";
 
 export type Phrase = string;
 

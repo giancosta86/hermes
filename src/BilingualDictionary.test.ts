@@ -1,4 +1,7 @@
-import { BilingualLibrary, BilingualDictionary } from "./BilingualDictionary";
+import {
+  BilingualLibrary,
+  BilingualDictionary
+} from "./BilingualDictionary.js";
 
 describe("Bilingual library", () => {
   describe("creation by phrase", () => {

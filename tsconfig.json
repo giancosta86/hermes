@@ -1,9 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
+  "include": ["src/**/*"],
 
-    "moduleResolution": "Node",
+  "files": ["global.d.ts"],
+
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ESNext",
+
+    "moduleResolution": "NodeNext",
 
     "rootDir": "./src",
     "outDir": "./dist",
@@ -23,8 +27,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-
-    "esModuleInterop": true
+    "noPropertyAccessFromIndexSignature": true
   }
 }

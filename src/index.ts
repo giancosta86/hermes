@@ -1,9 +1,9 @@
-export * from "./BilingualDictionary";
+export * from "./BilingualDictionary.js";
 
-export * from "./IsoDateFormat";
+export * from "./IsoDateFormat.js";
 
-export * from "./LocaleLike";
+export * from "./LocaleLike.js";
 
-export * from "./MeasureUnit";
+export * from "./MeasureUnit.js";
 
-export * from "./Noun";
+export * from "./Noun.js";

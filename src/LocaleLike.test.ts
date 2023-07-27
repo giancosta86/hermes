@@ -2,7 +2,7 @@ import {
   ensureLocale,
   ensureLanguageTag,
   getLocaleDistance
-} from "./LocaleLike";
+} from "./LocaleLike.js";
 
 describe("Ensuring a Locale", () => {
   describe("when a Locale is passed", () => {
