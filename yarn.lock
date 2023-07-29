@@ -655,74 +655,74 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rimbu/base@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/base/-/base-1.0.0.tgz#a48550376c3e6a0ceb899d6a368a8cc6f1591422"
-  integrity sha512-8oKAdUkH1ClchEG4oyhCZtyBY6XtsoT5o8jmh/GhPFmjBRZxKyGCj4+6BfJ0FyXa+yuYtTvZpH81F+IRz+NaaQ==
+"@rimbu/base@^0.11.4":
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/@rimbu/base/-/base-0.11.4.tgz#d01e37a735624bf2cfad4037a4203b1fea4cbc8a"
+  integrity sha512-akKssoMzhaE0n0R/7ODUoYTtghOGUNN1mrAHWUJRQHBa5hsfUvku5JvstcQfg1Bg3boZem9nYQOZSlIMZauQog==
   dependencies:
-    "@rimbu/common" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/common" "*"
+    tslib "^2.5.0"
 
-"@rimbu/collection-types@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/collection-types/-/collection-types-1.0.0.tgz#97305654637f8fb449912bfe88e724adcbf8114a"
-  integrity sha512-IqBwBEoabA5aZOYJJkGv+K8V9dWmXGBV5KlUPdg289T549Pes/A1VypkW/VZqoYi1O+aW1gF+GE+5muq5/PK0g==
+"@rimbu/collection-types@^0", "@rimbu/collection-types@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@rimbu/collection-types/-/collection-types-0.10.6.tgz#95afb0dfa3919c626361ddec0ef06645777107d2"
+  integrity sha512-s+lmfCgSCBgDZK8mCCRVbi/gHL8h2JSmvRUTWpX6P2XCOp3FZW3ZLvJZqRHkod/rTCsdZPdSVv9XJ4XYICNVNQ==
   dependencies:
-    "@rimbu/base" "^1.0.0"
-    "@rimbu/common" "^1.0.0"
-    "@rimbu/stream" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/base" "^0.11.4"
+    "@rimbu/common" "*"
+    "@rimbu/stream" "^0.13.6"
+    tslib "^2.5.0"
 
-"@rimbu/common@^1.0.0":
+"@rimbu/common@*":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@rimbu/common/-/common-1.0.0.tgz#8888b73b6dee769bfcff1009f09f96499e852056"
   integrity sha512-/2df7FDSN8x5Eh1RxK+u7k5Si7bJHKNWpbzoePCfXgz629DMDCioJWNF7XFbFSnhKSLnmIzfnme0E/Av01MRGA==
   dependencies:
     tslib "^2.5.3"
 
-"@rimbu/hashed@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/hashed/-/hashed-1.0.0.tgz#3be0d94b0cb91ddc6980690d9f3c992a366f41ed"
-  integrity sha512-fX1Vfk9goWHFsO007utdu3qDRb0x6E8NsRJZxuJdbF0bN+otzoRBF9r3Vue3On9dq8iVRvLnkIxRsyv2+ETHLw==
+"@rimbu/hashed@^0", "@rimbu/hashed@^0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@rimbu/hashed/-/hashed-0.9.7.tgz#8c44cabfcd05a699ccd48ce751f191d0bb62e98e"
+  integrity sha512-5Zb1fDmH27ddg9fk7J43cEfSK6Tnzz4dEGLmS4VovN+eclgm88muhP9h4V1De7hstS4XreTG9hHIRYcxAqKd6Q==
   dependencies:
-    "@rimbu/base" "^1.0.0"
-    "@rimbu/collection-types" "^1.0.0"
-    "@rimbu/common" "^1.0.0"
-    "@rimbu/list" "^1.0.0"
-    "@rimbu/stream" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/base" "^0.11.4"
+    "@rimbu/collection-types" "^0.10.6"
+    "@rimbu/common" "*"
+    "@rimbu/list" "^0.12.3"
+    "@rimbu/stream" "^0.13.6"
+    tslib "^2.5.0"
 
-"@rimbu/list@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/list/-/list-1.0.0.tgz#2fa5f44e98b15ab0c4fef735387b9fc7e2a25dec"
-  integrity sha512-MDf+E2YFIHUUpNDKoDe2IAwbYMdI22oIPKoleqPLBc5S+ttnosi+uEH6bJ3tAxFwIaEzPRXw1EyxD7/mD8ezAg==
+"@rimbu/list@^0.12.3":
+  version "0.12.3"
+  resolved "https://registry.yarnpkg.com/@rimbu/list/-/list-0.12.3.tgz#e7589fc04b2b7b68c1a4bbe68b3236c87415218b"
+  integrity sha512-fBIF7Acvpx/jd5WmZpn9nJob/0548vEdA9VscBod2Bqz8G/8o+2VtiRk+rhqKLeKp7T7qR4BQ3+qgCA2n3I8iA==
   dependencies:
-    "@rimbu/base" "^1.0.0"
-    "@rimbu/collection-types" "^1.0.0"
-    "@rimbu/common" "^1.0.0"
-    "@rimbu/stream" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/base" "^0.11.4"
+    "@rimbu/collection-types" "^0.10.6"
+    "@rimbu/common" "*"
+    "@rimbu/stream" "^0.13.6"
+    tslib "^2.5.0"
 
-"@rimbu/proximity@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/proximity/-/proximity-1.0.0.tgz#563a2fd992d396f51061647d3a89016a8d0876f7"
-  integrity sha512-jfjn2u//XrO4/imCsenXzKRcbxmW0XRI/2khfze0v+yxi5/Od+bX0ib3sYd+Nv3xPTxaRTVU2QtRZ8EJRKh80w==
+"@rimbu/proximity@^0":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@rimbu/proximity/-/proximity-0.1.2.tgz#8b949fed1c426908dc5518dff5cc16a33a50066e"
+  integrity sha512-agxQvOloVjgQwKh2KnQ0UPxlXJE+axpHM78wK46zTeBnBvi//xAcloLEErv78aC6QsmS3XlDbiCz0iWTEZt9Ig==
   dependencies:
-    "@rimbu/base" "^1.0.0"
-    "@rimbu/collection-types" "^1.0.0"
-    "@rimbu/common" "^1.0.0"
-    "@rimbu/hashed" "^1.0.0"
-    "@rimbu/stream" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/base" "^0.11.4"
+    "@rimbu/collection-types" "^0.10.6"
+    "@rimbu/common" "*"
+    "@rimbu/hashed" "^0.9.7"
+    "@rimbu/stream" "^0.13.6"
+    tslib "^2.5.0"
 
-"@rimbu/stream@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@rimbu/stream/-/stream-1.0.0.tgz#a9b8f99e56e740312d62eadd41de268b368630c2"
-  integrity sha512-o4Oh6I/E7V7z+H8l+T2luxoQET21OOB3vkhtYbhSIANNDdB2RfodoJFet28HEgwgpr30vAYlA56XbvmL45jkDA==
+"@rimbu/stream@^0", "@rimbu/stream@^0.13.6":
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/@rimbu/stream/-/stream-0.13.6.tgz#e84f4cbaff5b3512142e650ff5e0ccca10b0d38f"
+  integrity sha512-XGil6bZrHVv9kKt0ztbCn9DNY4l72xbws45ZRW2p8PR2oG0X2ZK3pLJvszMmCjf60X5Ft5U/Q91DVmQudmAIew==
   dependencies:
-    "@rimbu/base" "^1.0.0"
-    "@rimbu/common" "^1.0.0"
-    tslib "^2.5.3"
+    "@rimbu/base" "^0.11.4"
+    "@rimbu/common" "*"
+    tslib "^2.5.0"
 
 "@sinclair/typebox@^0.25.16":
   version "0.25.24"
@@ -2833,6 +2833,11 @@ tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.5.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
+  integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
 
 tslib@^2.5.3:
   version "2.6.0"
