@@ -3,7 +3,7 @@ module.exports = {
     "^.+\\.(t|j)sx?$": ["@swc/jest"]
   },
 
-  testPathIgnorePatterns: ["<rootDir>/dist/", "/_.+"],
+  testPathIgnorePatterns: ["/_.+"],
 
   coveragePathIgnorePatterns: ["<rootDir>/src/proximity"],
 
