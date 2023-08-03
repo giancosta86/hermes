@@ -1,9 +1,8 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["**/*.test.ts"],
+  "include": ["./src/**/*", "./global.d.ts"],
 
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ES2021",
     "module": "CommonJS",
 
     "moduleResolution": "Node",
@@ -28,6 +27,11 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
 
-    "esModuleInterop": true
+    "esModuleInterop": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
   }
 }
