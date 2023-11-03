@@ -61,6 +61,10 @@ export class BilingualLibrary {
     return new BilingualLibrary(translationsByLocaleMap);
   }
 
+  static empty(): BilingualLibrary {
+    return new BilingualLibrary(ProximityMap.empty());
+  }
+
   private constructor(
     private readonly translationsByLocale: ProximityMap<
       Intl.BCP47LanguageTag,
@@ -74,5 +78,9 @@ export class BilingualLibrary {
     );
 
     return new BasicBilingualDictionary(translations);
+  }
+
+  get locales(): Stream<Intl.BCP47LanguageTag> {
+    return this.translationsByLocale.streamKeys();
   }
 }

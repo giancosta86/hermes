@@ -54,7 +54,7 @@ The public API entirely resides in the root package index, so one shouldn't refe
 
   Each dictionary can be retrieved from a library via a `LocaleLike` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; the proximity is computed with `getLocaleDistance()`, as described above.
 
-  If a library is requested an unregistered locale, an empty dictionary is returned.
+  The registered locales are returned by the `locales` properties; if a library is requested an unregistered locale, an empty dictionary is returned.
 
 - `BilingualDictionary` contains:
 

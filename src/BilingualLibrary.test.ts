@@ -14,6 +14,14 @@ describe("Bilingual library", () => {
     });
   });
 
+  describe("empty creation", () => {
+    it("should actually work", () => {
+      const library = BilingualLibrary.empty();
+
+      expect(library.locales.count()).toBe(0);
+    });
+  });
+
   describe.each([
     {
       creationMode: "by phrase",
@@ -44,6 +52,10 @@ describe("Bilingual library", () => {
       ])
     }
   ])("created $creationMode", ({ library }) => {
+    it("should list all the registered locales", () => {
+      expect(library.locales.toArray().sort()).toEqual(["es", "zh-CN"]);
+    });
+
     describe.each([
       {
         scenario: "a registered locale",
