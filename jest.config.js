@@ -7,5 +7,5 @@ module.exports = {
 
   coveragePathIgnorePatterns: ["<rootDir>/src/proximity"],
 
-  setupFilesAfterEnv: ["jest-extended/all"]
+  setupFilesAfterEnv: ["jest-extended/all", "@giancosta86/more-jest/dist/all"]
 };

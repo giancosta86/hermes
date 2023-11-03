@@ -333,6 +333,20 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.46.0.tgz#3f7802972e8b6fe3f88ed1aabc74ec596c456db6"
   integrity sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==
 
+"@giancosta86/more-jest@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@giancosta86/more-jest/-/more-jest-3.0.1.tgz#83bdbbaf1580e7962fc4e45aa2736f9a26f27388"
+  integrity sha512-kuI8QR/7Qjx+2D+mae+5NyE1iXgm1XMyGeWxdQWkvUnyImF9X+odOxfqbPVBTgZxlHa69LjKOdaFu75XBGqqZA==
+  dependencies:
+    "@giancosta86/stream-utils" "^2.2.0"
+    "@rimbu/common" "^1.1.0"
+    "@rimbu/list" "^1.1.0"
+
+"@giancosta86/stream-utils@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/stream-utils/-/stream-utils-2.2.0.tgz#adf033649d9c92023bf28efe8bbe0f8dda4443b2"
+  integrity sha512-hrzHesSuwGeYTBo8AOL1eoGF4C1pjt177uAJ4pOI5Auet0CTC5y92FDn2ru2IvDRYy3ZxDgoHAdf9FJYApwLHA==
+
 "@giancosta86/time-utils@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@giancosta86/time-utils/-/time-utils-3.0.0.tgz#23fb1d5f3bae6d2bdd6a0813f2d08b88c1abb61b"
