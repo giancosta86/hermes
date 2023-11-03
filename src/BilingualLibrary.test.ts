@@ -1,4 +1,5 @@
-import { BilingualLibrary, BilingualDictionary } from "./BilingualDictionary";
+import { BilingualDictionary } from "./BilingualDictionary";
+import { BilingualLibrary } from "./BilingualLibrary";
 
 describe("Bilingual library", () => {
   describe("creation by phrase", () => {
@@ -78,7 +79,7 @@ describe("Bilingual library", () => {
       });
 
       describe("when requesting a phrase with no translation in the dictionary", () => {
-        it("should return the requested phrase itself", () => {
+        it("should return the phrase itself", () => {
           const translation = dictionary.get("theatre");
           expect(translation).toBe("theatre");
         });
@@ -100,7 +101,7 @@ describe("Bilingual library", () => {
       });
 
       describe("when requesting a phrase translated to other locales", () => {
-        it("should return just the phrase itself", () => {
+        it("should return the phrase itself", () => {
           const translation = dictionary.get("book");
           expect(translation).toBe("book");
         });

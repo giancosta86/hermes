@@ -1,3 +1,5 @@
+export * from "./BilingualLibrary";
+
 export * from "./BilingualDictionary";
 
 export * from "./IsoDateFormat";
