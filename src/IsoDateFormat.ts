@@ -1,19 +1,19 @@
 import { IsoDate } from "@giancosta86/time-utils";
 
-const defaultFormatOptions: Readonly<Intl.DateTimeFormatOptions> = {
-  day: "numeric",
-  month: "long",
-  year: "numeric"
-};
-
 export class IsoDateFormat {
+  static readonly defaultOptions: Readonly<Intl.DateTimeFormatOptions> = {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  };
+
   private readonly options: Readonly<Intl.DateTimeFormatOptions>;
 
   constructor(
     private readonly locale: Intl.LocalesArgument,
     options?: Readonly<Intl.DateTimeFormatOptions>
   ) {
-    this.options = options ?? defaultFormatOptions;
+    this.options = options ?? IsoDateFormat.defaultOptions;
   }
 
   format(isoDate: IsoDate): string {

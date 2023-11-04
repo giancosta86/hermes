@@ -10,25 +10,19 @@ _Minimalist i18n in TypeScript_
 
 ## Installation
 
-```bash
-npm install @giancosta86/hermes
-```
+The package on NPM is:
 
-or
-
-```bash
-yarn add @giancosta86/hermes
-```
+> @giancosta86/hermes
 
 The public API entirely resides in the root package index, so one shouldn't reference specific modules.
 
 ## Usage
 
-- `IsoDateFormat`: formats `IsoDate` objects - as defined in [time-utils](https://github.com/giancosta86/time-utils). It can be constructed with the same options as `DateTimeFormat` - also supporting reasonable defaults
+- `IsoDateFormat`: formats `IsoDate` objects - as defined in [time-utils](https://github.com/giancosta86/time-utils). It can be constructed with the same options as `DateTimeFormat` - also supporting reasonable defaults in its `defaultOptions` static property
 
 - `Noun`: defines a noun - which can have a _singular_ and a _plural_ form. Case-based declension is not supported at present, but one can use case-keyed maps of `Noun` values
 
-- `MeasureUnit` takes a `Noun` and provides a `get()` method, which returns:
+- `MeasureUnit` takes a `Noun` and provides a `declineFor()` method, which returns:
 
   - the `singular` form if the value is +1 or -1
 
@@ -36,31 +30,33 @@ The public API entirely resides in the root package index, so one shouldn't refe
 
 - `Language` is a semantically useful type alias for `string`
 
-- `LocaleLike` - can be either a [BCP47](https://en.wikipedia.org/wiki/IETF_language_tag) **language tag** string or an `Ìntl.Locale` object
+- `LocaleLike` - can be either a [BCP47](https://en.wikipedia.org/wiki/IETF_language_tag) **language tag** string or an `Ìntl.Locale` object; its namespace provides:
 
-- `localeNuances` is an array containing the i18n-related properties of an `Intl.Locale` instance _except_ the `language` attribute
+  - `languageFacets`: an array containing the i18n-related attribute names of an `Intl.Locale` instance _except_ the `language` attribute
 
-- `ensureLocale()` takes a `LocaleLike` and always returns an `Intl.Locale`
+  - `toLocale()` takes a `LocaleLike` and always returns an `Intl.Locale`
 
-- `ensureLanguageTag()` takes a `LocaleLike` and returns its BCP47 language tag
+  - `toLanguageTag()` takes a `LocaleLike` and returns its BCP47 language tag
 
-- `getLocaleDistance()` takes two `LocaleLike`, converts them to `Intl.Locale` and returns:
+  - `getDistance()` takes two `LocaleLike`, converts them to `Intl.Locale` and returns:
 
-  - `Number.POSITIVE_INFINITY` if the two `language` attributes are different
+    - `Number.POSITIVE_INFINITY` if the two `language` attributes are different
 
-  - `0` if all the other i18n-related attributes (`localeNuances`) are equal, otherwise `+1` is added for every non-matching attribute
+    - `0` if all the other i18n-related attributes (`languageFacets`) are equal, otherwise `+1` is added for every non-matching attribute
 
-- `BilingualLibrary` is a library of `BilingualDictionary` instances and can be built via static methods; additionally, `Phrase` is just a type alias for `string` that identifies each side of a dictionary translation.
+  - `createProximityContext()`: creates a context for a `ProximityMap` based
 
-  Each dictionary can be retrieved from a library via a `LocaleLike` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; the proximity is computed with `getLocaleDistance()`, as described above.
+- `DictionaryLibrary` is a container of virtually illimited `Dictionary` instances, can only be built via static methods.
 
-  The registered locales are returned by the `locales` properties; if a library is requested an unregistered locale, an empty dictionary is returned.
+  Each dictionary can be retrieved from a library via `getDictionary(LocaleLike)` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; proximity is computed with `LocaleLike.getDistance()`, as described above.
 
-- `BilingualDictionary` contains:
+  The registered locales are returned by the `streamLocales()` method; if a library is requested an unregistered locale, an empty dictionary is returned - so translations will always return the requested phrase itself.
 
-  - a `get(<phrase string>)` method, to return the related translation registered for that dictionary; if a translation is not registered, the original phrase itself is returned
+- The `Dictionary` interface provides:
 
-  - a `toRawTranslations()`: returns an object whose keys are the phrases registered, with the related translations as values; the returned type is `RawTranslations`
+  - `translate(<phrase string>)`: to return the translation registered for the given phrase; if a translation is not registered, the original phrase itself is returned
+
+  - `toRawTranslations()`: returns an object whose keys are the registered phrases, with the related translations as values; the returned type is `RawTranslations`
 
 ## Further references
 

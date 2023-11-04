@@ -18,9 +18,9 @@ describe.each<{ form: keyof Noun; values: readonly number[] }>([
 ])("Declining a measure unit", ({ form, values }) => {
   describe.each(values)("when the value is %p", value => {
     it(`should be ${form}`, () => {
-      const testUnit = new MeasureUnit(testUnitNoun);
+      const measureUnit = new MeasureUnit(testUnitNoun);
 
-      const declinedForm = testUnit.get(value);
+      const declinedForm = measureUnit.declineFor(value);
 
       expect(declinedForm).toBe(testUnitNoun[form]);
     });
