@@ -37,7 +37,7 @@
     "watch": "yarn compile-ts --watch"
   },
   "dependencies": {
-    "@giancosta86/time-utils": "^3.0.0",
+    "@giancosta86/time-utils": "^4.2.0",
     "@rimbu/collection-types": "^1.1.0",
     "@rimbu/hashed": "^1.1.0",
     "@rimbu/proximity": "^1.1.0",

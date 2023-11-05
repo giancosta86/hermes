@@ -347,10 +347,10 @@
   resolved "https://registry.yarnpkg.com/@giancosta86/stream-utils/-/stream-utils-2.2.0.tgz#adf033649d9c92023bf28efe8bbe0f8dda4443b2"
   integrity sha512-hrzHesSuwGeYTBo8AOL1eoGF4C1pjt177uAJ4pOI5Auet0CTC5y92FDn2ru2IvDRYy3ZxDgoHAdf9FJYApwLHA==
 
-"@giancosta86/time-utils@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@giancosta86/time-utils/-/time-utils-3.0.0.tgz#23fb1d5f3bae6d2bdd6a0813f2d08b88c1abb61b"
-  integrity sha512-nCEDgKfgDzT5freFAvGAidBrD7RuwGadc3jc84ZaH4FJShpyInsgTuoMdgF6TgEVXveqV+OSGqRDZ0o8fSC3Ow==
+"@giancosta86/time-utils@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/time-utils/-/time-utils-4.2.0.tgz#78d9669e13cc64827c479736340aa173da2843a2"
+  integrity sha512-I5Iq3MWR82lkgZnFYScVBHE9bsBiZm41jE5CKX0ZAfDUT2fZeu8PJHnkODjwi9RvAt8rn2D6jT/dIf31qDUPwA==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
