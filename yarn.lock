@@ -333,12 +333,13 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.46.0.tgz#3f7802972e8b6fe3f88ed1aabc74ec596c456db6"
   integrity sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==
 
-"@giancosta86/more-jest@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@giancosta86/more-jest/-/more-jest-3.0.1.tgz#83bdbbaf1580e7962fc4e45aa2736f9a26f27388"
-  integrity sha512-kuI8QR/7Qjx+2D+mae+5NyE1iXgm1XMyGeWxdQWkvUnyImF9X+odOxfqbPVBTgZxlHa69LjKOdaFu75XBGqqZA==
+"@giancosta86/more-jest@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/more-jest/-/more-jest-4.0.0.tgz#64695d686d423536d8115a4df0c46b69015f04a3"
+  integrity sha512-6y7oFtBngdrJCIe0rBLYE5KGPbAjOtobFhZVDJGtOXwTqPa3oRLW91LKwqVVj4/tY3ZYujLH3l9LBE60+8ysnQ==
   dependencies:
     "@giancosta86/stream-utils" "^2.2.0"
+    "@giancosta86/swan-lake" "^1.0.0"
     "@rimbu/common" "^1.1.0"
     "@rimbu/list" "^1.1.0"
 
@@ -347,10 +348,15 @@
   resolved "https://registry.yarnpkg.com/@giancosta86/stream-utils/-/stream-utils-2.2.0.tgz#adf033649d9c92023bf28efe8bbe0f8dda4443b2"
   integrity sha512-hrzHesSuwGeYTBo8AOL1eoGF4C1pjt177uAJ4pOI5Auet0CTC5y92FDn2ru2IvDRYy3ZxDgoHAdf9FJYApwLHA==
 
-"@giancosta86/time-utils@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@giancosta86/time-utils/-/time-utils-4.2.0.tgz#78d9669e13cc64827c479736340aa173da2843a2"
-  integrity sha512-I5Iq3MWR82lkgZnFYScVBHE9bsBiZm41jE5CKX0ZAfDUT2fZeu8PJHnkODjwi9RvAt8rn2D6jT/dIf31qDUPwA==
+"@giancosta86/swan-lake@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/swan-lake/-/swan-lake-1.0.0.tgz#fbbc204a6d44f6b3e8ca55be848afa2cd0cfbe88"
+  integrity sha512-97xfs7DFUpr2nF5z19XBq8CrDIofo7eZKd+gN+hcmZhkJL/v26psqOnAWTLp9qveGiptgazAQ4wwFVHwXO1YEA==
+
+"@giancosta86/time-utils@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@giancosta86/time-utils/-/time-utils-5.0.0.tgz#9467ae734b8bc57faf1ef8b1f0f90ca832622fe3"
+  integrity sha512-2FtvXFshiUuX/N+1K3iRvXV46GxtKbFYF5WISYrdWgqHMgycBa1sN8m1wUtUlzzmNenYGvcSSHF180QOSggnSQ==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
