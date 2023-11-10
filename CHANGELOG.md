@@ -1,3 +1,7 @@
+## Version 3
+
+- `Dictionary` is now a class, not an interface
+
 ## Version 2
 
 ### Globals

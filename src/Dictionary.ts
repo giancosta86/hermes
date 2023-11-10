@@ -1,9 +1,17 @@
+import { RMap } from "@rimbu/collection-types";
+
 export type Phrase = string;
 
 export type TranslationsByPhrase = Readonly<{ [phrase: string]: string }>;
 
-export interface Dictionary {
-  translate(phrase: Phrase): Phrase;
+export class Dictionary {
+  constructor(private readonly translations?: RMap<Phrase, Phrase>) {}
 
-  toRawTranslations(): TranslationsByPhrase;
+  translate(phrase: Phrase): Phrase {
+    return this.translations?.get(phrase) ?? phrase;
+  }
+
+  toRawTranslations(): TranslationsByPhrase {
+    return Object.fromEntries(this.translations?.stream() ?? []);
+  }
 }

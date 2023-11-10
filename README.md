@@ -46,17 +46,17 @@ The public API entirely resides in the root package index, so one shouldn't refe
 
   - `createProximityContext()`: creates a context for a `ProximityMap` based
 
-- `DictionaryLibrary` is a container of virtually illimited `Dictionary` instances, can only be built via static methods.
-
-  Each dictionary can be retrieved from a library via `getDictionary(LocaleLike)` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; proximity is computed with `LocaleLike.getDistance()`, as described above.
-
-  The registered locales are returned by the `streamLocales()` method; if a library is requested an unregistered locale, an empty dictionary is returned - so translations will always return the requested phrase itself.
-
-- The `Dictionary` interface provides:
+- The `Dictionary` class provides:
 
   - `translate(<phrase string>)`: to return the translation registered for the given phrase; if a translation is not registered, the original phrase itself is returned
 
   - `toRawTranslations()`: returns an object whose keys are the registered phrases, with the related translations as values; the returned type is `RawTranslations`
+
+- `DictionaryLibrary` is a container of virtually illimited `Dictionary` instances - and can only be built via static methods.
+
+  Each dictionary can be retrieved from a library via `getDictionary(LocaleLike)` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; proximity is computed with `LocaleLike.getDistance()`, as described above.
+
+  The registered locales are returned by the `streamLocales()` method; if a library is requested an unregistered locale, an empty dictionary is returned - so translations will always return the requested phrase itself.
 
 ## Further references
 

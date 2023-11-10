@@ -4,7 +4,6 @@ import { ProximityMap } from "@rimbu/proximity";
 import { RMap } from "@rimbu/collection-types";
 import { Dictionary, Phrase, TranslationsByPhrase } from "./Dictionary";
 import { LocaleLike } from "./LocaleLike";
-import { BasicDictionary } from "./BasicDictionary";
 
 export type TranslationsByLanguageTag = Readonly<{
   [languageTag: string]: string;
@@ -84,7 +83,7 @@ export class DictionaryLibrary {
     const languageTag = LocaleLike.toLanguageTag(locale);
     const translations = this.translationsByLanguageTag.get(languageTag);
 
-    return new BasicDictionary(translations);
+    return new Dictionary(translations);
   }
 
   streamLanguageTags(): Stream<Intl.BCP47LanguageTag> {
