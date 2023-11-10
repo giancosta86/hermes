@@ -68,4 +68,21 @@ describe("Dictionary", () => {
       });
     });
   });
+
+  describe("building from raw translations", () => {
+    it("should work", () => {
+      const sourceTranslations = {
+        Alpha: "A",
+        Beta: "B",
+        Gamma: "C",
+        Delta: "D"
+      };
+
+      const dictionary = Dictionary.fromRawTranslations(sourceTranslations);
+
+      const actualTranslations = dictionary.toRawTranslations();
+
+      expect(actualTranslations).toEqual(sourceTranslations);
+    });
+  });
 });

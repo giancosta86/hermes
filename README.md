@@ -52,6 +52,12 @@ The public API entirely resides in the root package index, so one shouldn't refe
 
   - `toRawTranslations()`: returns an object whose keys are the registered phrases, with the related translations as values; the returned type is `RawTranslations`
 
+  A dictionary can be built via:
+
+  - the constructor, expecting a Rimbu `RMap`
+
+  - the static `fromRawTranslations` method, expecting a plain object whose entries are the translations
+
 - `DictionaryLibrary` is a container of virtually illimited `Dictionary` instances - and can only be built via static methods.
 
   Each dictionary can be retrieved from a library via `getDictionary(LocaleLike)` - not necessarily via an exact match, but by _proximity_: the dictionary registered with the _most matching_ locale (shorter or longer) is returned; proximity is computed with `LocaleLike.getDistance()`, as described above.
